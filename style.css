@@ -13,7 +13,7 @@ img{
 @media only screen and (max-width: 600px) {
   .CDUlogo{
     position: relative;
-    width:80%;
+    width:100%;
   }
 
   body{
