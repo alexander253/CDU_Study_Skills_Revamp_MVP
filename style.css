@@ -103,9 +103,14 @@ h4{
 
 }
 .all_cards{
-  margin: auto;
-
+  margin-left: -20px;
+  margin-right: 0px
 }
+ .wrap{
+   width: auto;
+   margin: auto;
+   text-align: center;
+ }
 
 
  .card{
