@@ -92,11 +92,13 @@ h4{
   text-align: justify;
 }
 
-
+.all_cards{
+  margin-left: -20px;
+  margin-right: 0px
+}
  .wrap{
    width: auto;
    margin: auto;
-   margin-top: 50px;
  }
 .card img{
   padding: 3px;
