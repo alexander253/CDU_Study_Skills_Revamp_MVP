@@ -176,24 +176,35 @@ h4{
 
 }
 
-ul{
-  list-style-type: none;
-  right: 0px;
-  top: 0;
-  width: 100%;
-  color: black;
-  font-size: 20px;
+
+
+.nav_menu{
   float: right;
-  text-align: right;
-  position: absolute;
+
+
+
+}
+.nav_menu a{
+  color: black;
+  padding: 15px 30px;
+  font-size: 20px;
+  text-decoration: none;
 
 }
 
-.nav_menu a{
-  color: black;
-  padding: 5px 15px;
-  text-decoration: none;
+.nav_menu a ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
 
+}
+
+.nav_menu a ul li{
+  height: 50px;
+  line-height: 50px;
+
+
+}
 
 }
 
@@ -248,8 +259,9 @@ ul{
 .menu_icon{
   display: inline-block;
   cursor: pointer;
+  position: relative;
   float: right;
-  margin-top: -100px;
+  margin-top: -450px;
   display: none;
 }
 
@@ -265,12 +277,30 @@ ul{
 
 
 @media only screen and (max-width: 750px) {
-  .nav_menu a{
-    display: none;
+  .nav_menu{
+    /*display: none;*/
+    background: #201644;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 50px;
+    left: 0;
+    transition: 0.5s;
   }
+
+  .nav_menu ul li{
+    display: block;
+    text-align: center;
+
+
+  }
+
+
   .menu_icon{
+    position: relative;
     display: block;
   }
+
 
 
   .CDUlogo{
