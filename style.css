@@ -1,34 +1,20 @@
 
 html {
     position: relative;
-    min-height: 100%;
+
 }
 body{
   font-family: sans-serif;
   background: #FFFFFC;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-img{
-  margin-top: -30px;
-  height: auto;
-  width: 25%;
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
-
-}
-@media only screen and (max-width: 750px;) {
-
-  body{
-    padding-left: 10px;
-    padding-right: 10px;
+.CDUlogo{
+    position: relative;
+    width:40%;
   }
-
-  }
-
 
 
 
@@ -67,7 +53,7 @@ h3 span{
   clear: both;
   background-color:#201644;
   box-shadow: 5px 5px #888888;
-
+  
 
 
 
@@ -172,12 +158,13 @@ h4{
   background-size: cover;
   background-position: center;
   display: block;
+  top:200px;
 
 }
 
 ul{
   list-style-type: none;
-  right: 50px;
+  right: 0px;
   top: 0;
   width: 100%;
   color: black;
@@ -187,9 +174,10 @@ ul{
   position: absolute;
 
 }
+
 .header a{
   color: black;
-  padding: 15px 30px;
+  padding: 5px 15px;
   text-decoration: none;
 
 
@@ -242,3 +230,18 @@ ul{
 #hcontent, #hcontent2, #hcontent3{
   display: none;
 }
+
+@media only screen and (max-width: 750px) {
+  .CDUlogo{
+    position: relative;
+    width:80%;
+  }
+  .background_img{
+    display: none;
+  }
+
+  body{
+    padding: 10px;
+  }
+
+  }
