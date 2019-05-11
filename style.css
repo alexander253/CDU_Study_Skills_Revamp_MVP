@@ -6,20 +6,16 @@ html {
 body{
   font-family: sans-serif;
   background: #FFFFFC;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 
 }
-
 
 .CDUlogo{
     position: relative;
     width:25%;
-    margin-top:-30px;
+    margin-top:40px;
   }
-
-
-
 
 h1{
   padding-top: 15px;
@@ -46,12 +42,9 @@ h2{
   font-size: 20px;
 }
 
-
 li{
   display: inline;
 }
-
-
 
 h3 span{
   color: white;
@@ -60,21 +53,14 @@ h3 span{
   clear: both;
   background-color:#201644;
   box-shadow: 5px 5px #888888;
-
-
-
-
 }
 
 h4{
   font-size: 20px;
 }
 
-
-
-
 .item{
-  display: block;
+  diplay: block;
   background-color: #201644;
   color: white;
   cursor: point;
@@ -103,7 +89,7 @@ h4{
 .card img{
   padding: 3px;
   margin-top: 5px;
-  width: 440px;
+  width: 430px;
   height: 300px;
 
 }
@@ -126,21 +112,14 @@ h4{
    border-style: ridge;
    border-radius: 5px;
    margin-bottom: 100px;
-   box-shadow: 5px 10px #888888;
-
-
-   -webkit-animation-duration: 1s;
-   animation-duration: 1s;
-   -webkit-animation-fill-mode: both;
-   animation-fill-mode: both;
-   -webkit-animation-timing-function: ease-in-out;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: 1;
-   -webkit-animation-iteration-count: 1;
-        ###https://codepen.io/halink0803/pen/qdVXqm got code from here
+   box-shadow: 5px 10px #cccccc ;
+   transition: 0.2s linear;
  }
 
-
+ .card:hover{
+   cursor: pointer;
+   box-shadow: 5px 10px #888888;
+ }
  .collapsible{
   display: block;
   background-color: #201644;
@@ -177,35 +156,22 @@ h4{
 }
 
 
-
-.nav_menu{
-  float: right;
-
-
-
-}
 .nav_menu a{
   color: black;
-  padding: 15px 30px;
+  padding: 0px 50px;
   font-size: 20px;
   text-decoration: none;
-
 }
 
 .nav_menu a ul{
   margin: 0;
   padding: 0;
   display: flex;
-
 }
 
 .nav_menu a ul li{
-  height: 50px;
+  height: 30px;
   line-height: 50px;
-
-
-}
-
 }
 
 .nav_menu a:hover{
@@ -223,34 +189,11 @@ h4{
   color: #42858C;
 }
 
-/*
-@keyframes bounce {
-	0%, 100%, 20%, 50%, 80% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-	40% {
-		-webkit-transform: translateY(-30px);
-		-ms-transform:     translateY(-30px);
-		transform:         translateY(-30px)
-	}
-	60% {
-		-webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
-	}
-}
-*/
-
 .all_cards{
   margin-top: 50px;
 }
-.card:hover {
-  cursor: pointer;
-  animation-name: bounce;
-  -moz-animation-name: bounce;
-}
+
+
 
 #hcontent, #hcontent2, #hcontent3{
   display: none;
@@ -259,10 +202,9 @@ h4{
 .menu_icon{
   display: inline-block;
   cursor: pointer;
-  position: relative;
-  float: right;
-  margin-top: -450px;
-  display: none;
+  position: absolute;
+  display: block;
+  top:10px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -273,46 +215,56 @@ h4{
   transition: 0.4s;
 }
 
-
-
-
-@media only screen and (max-width: 750px) {
-  .nav_menu{
-    /*display: none;*/
-    background: #201644;
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    top: 50px;
-    left: 0;
-    transition: 0.5s;
-  }
-
-  .nav_menu ul li{
+.nav_menu ul li{
     display: block;
     text-align: center;
+}
 
 
-  }
-
-
-  .menu_icon{
-    position: relative;
-    display: block;
-  }
-
-
-
-  .CDUlogo{
-    position: relative;
-    width:50%;
-  }
-  .background_img{
+.nav_menu{
     display: none;
-  }
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    top: 0px;
+    left: 0;
+    transition: 0.5s;
+}
 
-  body{
-    padding: 10px;
-  }
 
+  @media only screen and (max-width: 750px) {
+    .nav_menu{
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 15vh;
+      top: 30px;
+      left: 0;
+      transition: 0.5s;
+      background-color: #555;
+    }
+    .nav_menu li a:hover:not(.active) {
+      background-color: black;
+    }
+
+    .menu_icon{
+      display: block;
+    }
+    .card {
+      width: 350px;
+    }
+    .card img{
+      width: 340px
+    }
+    .CDUlogo{
+      width: 50%;
+      left: 110px;
+      margin-bottom: -30px;
+    }
+    h1{
+      margin-top: 50px;
+    }
+    body{
+      padding: 7px;
+    }
   }
