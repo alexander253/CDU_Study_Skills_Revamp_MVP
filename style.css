@@ -24,7 +24,7 @@ h1{
   color: white;
   margin-top: 5px;
   text-align: center;
-  font-family:Century Schoolbook;
+  font-family:sans-serif;
   background: #201644;
   background-size: 100%;
   font-size: 2em;
@@ -48,7 +48,7 @@ li{
 
 h3 span{
   color: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   clear: both;
   background-color:#201644;
@@ -154,8 +154,8 @@ h4{
 
 
 .background_img{
-  background-image: url("https://www.iuj.ac.jp/wp-content/uploads/2014/10/Citation-Support.jpg");
-  height: 300px;
+  background-image: url("https://cdn.lynda.com/course/441605/441605-636269220092757522-16x9.jpg");
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
