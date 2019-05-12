@@ -231,7 +231,6 @@ h4{
 @media only screen and (max-width: 750px) {
 
   .nav_menu{
-     /*display: none;*/
      background: #FFFFFC;
      position: relative;
      width: 100%;
@@ -244,27 +243,30 @@ h4{
    .nav_menu ul li{
      display: block;
      text-align: center;
-
+     border: 1px solid gray;
+     padding: 15px 30px;
+     margin-bottom: 10px
 
    }
 
-  .menu_icon{
-  display: block;
+
+    .menu_icon{
+    display: block;
   }
-  .card {
-  width: 350px;
+    .card {
+    width: 350px;
   }
-  .card img{
-  width: 340px
+    .card img{
+    width: 340px
   }
-  .CDUlogo{
-  width: 50%;
-  left: 110px;
-  margin-bottom: -30px;
+    .CDUlogo{
+    width: 50%;
+    left: 110px;
+    margin-bottom: -50px;
   }
-  h1{
-  margin-top: 50px;
+    h1{
+    margin-top: 50px;
   }
-  body{
-  padding: 7px;
+    body{
+    padding: 7px;
   }
