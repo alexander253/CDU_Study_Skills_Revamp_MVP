@@ -46,6 +46,10 @@ li{
   display: inline;
 }
 
+h3{
+  margin-top: 30px;
+}
+
 h3 span{
   color: white;
   padding: 15px;
