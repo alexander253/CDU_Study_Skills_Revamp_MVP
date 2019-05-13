@@ -25,8 +25,8 @@ input[type=text] {
   background-repeat: no-repeat;
   background-size: 85px;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 input[type=text]:focus {
@@ -282,13 +282,16 @@ h4{
 
     .menu_icon{
     display: block;
-    margin-top: -80px;
   }
 
     input[type=text]{
-    width: 110px;
-    margin-top: -80px;
+    width: 0px;
+    margin-top: -10px;
 
+  }
+
+    input[type=text]:focus {
+    width: 30%;
   }
     .card {
     width: 350px;
