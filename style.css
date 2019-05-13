@@ -11,6 +11,28 @@ body{
 
 }
 
+input[type=text] {
+  width: 180px;
+  float: right;
+  margin-top: -100px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  background-image: url('https://blog.lendingloop.ca/wp-content/uploads/2017/05/material-icon-2155442_960_720.png');
+  background-position: -22px;
+  background-repeat: no-repeat;
+  background-size: 85px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 65%;
+}
+
 .CDUlogo{
     position: relative;
     width:25%;
@@ -48,6 +70,12 @@ li{
 
 h3{
   margin-top: 30px;
+
+}
+
+h3 a{
+  text-decoration: none;
+
 }
 
 h3 span{
@@ -55,7 +83,7 @@ h3 span{
   padding: 15px;
   border-radius: 5px;
   clear: both;
-  background-color:#201644;
+  background-color:#42858C;
   box-shadow: 5px 5px #888888;
 }
 
@@ -216,8 +244,7 @@ h4{
   cursor: pointer;
   position: relative;
   display: none;
-  float: right;
-  top:10px;
+  float: left;
 }
 
 .bar1, .bar2, .bar3 {
@@ -255,6 +282,13 @@ h4{
 
     .menu_icon{
     display: block;
+    margin-top: -80px;
+  }
+
+    input[type=text]{
+    width: 110px;
+    margin-top: -80px;
+
   }
     .card {
     width: 350px;
