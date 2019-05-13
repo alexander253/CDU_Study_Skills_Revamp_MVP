@@ -65,7 +65,7 @@ h4{
 
 .item{
   diplay: block;
-  background-color: #201644;
+  background-color: #0F95A0; /*#201644;*/
   color: white;
   cursor: point;
   padding: 18px;
@@ -126,7 +126,7 @@ h4{
  }
  .collapsible{
   display: block;
-  background-color: #201644;
+  background-color: #0F95A0; /*#201644;*/
   color: white;
   cursor: point;
   padding: 18px;
