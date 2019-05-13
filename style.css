@@ -191,14 +191,14 @@ h4{
 
 .nav_menu li a:hover:not(.active) {
   text-decoration: none;
-  background-color: #555;
+  background-color: #0F95A0;
   color: white;
   transition: 0.6s ease
 }
 .nav_menu li:hover
 .nav_menu li a.active {
   color: #42858C;
-  background-color: #555;
+  background-color: #0F95A0;
 }
 
 .all_cards{
