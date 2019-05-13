@@ -15,7 +15,6 @@ input[type=text] {
   width: 180px;
   float: right;
   margin-top: -100px;
-  box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 15px;
@@ -30,7 +29,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  width: 65%;
+  width: 60%;
 }
 
 .CDUlogo{
