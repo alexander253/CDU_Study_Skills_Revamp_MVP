@@ -325,6 +325,8 @@ h4{
     width: 30%;
   }
     .card {
+    margin: 0;
+    margin-bottom: 50px;
     width: 350px;
   }
     .card img{
@@ -345,7 +347,7 @@ h4{
   .footer{
     width: 100%;
     text-align: center;
-    margin-bottom: -300px;
+  
   }
   .social-link li{
     list-style: none;
