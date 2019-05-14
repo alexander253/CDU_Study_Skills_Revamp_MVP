@@ -49,15 +49,41 @@ h1{
   background-size: 100%;
   font-size: 2em;
 }
-footer{
+
+
+.footer{
   position: absolute;
+  margin-bottom: -200px;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #35393C;
+  background-color: #201644;
   color: white;
   text-align: center;
+
 }
+
+.footer a{
+  text-decoration: none;
+  color: #FFFFFC;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+  color: #42858C;
+}
+
+
+.social-link li{
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+
+
+
 
 h2{
   font-size: 20px;
@@ -308,4 +334,10 @@ h4{
   }
     body{
     padding: 7px;
+  }
+
+  .footer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: -300px;
   }
