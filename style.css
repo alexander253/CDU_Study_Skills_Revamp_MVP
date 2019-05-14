@@ -316,6 +316,7 @@ h4{
   }
 
     input[type=text]{
+    right: 15px;
     width: 0px;
     margin-top: -10px;
 
@@ -347,7 +348,7 @@ h4{
   .footer{
     width: 100%;
     text-align: center;
-  
+
   }
   .social-link li{
     list-style: none;
