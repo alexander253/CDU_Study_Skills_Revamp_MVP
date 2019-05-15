@@ -291,6 +291,9 @@ h4{
   transition: 0.4s;
 }
 
+label{
+  margin-left: -10000px
+}
 
 @media only screen and (max-width: 750px) {
 
