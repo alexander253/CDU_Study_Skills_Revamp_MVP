@@ -259,7 +259,9 @@ h4{
   color: white;
   transition: 0.6s ease
 }
+
 .nav_menu li:hover
+
 .nav_menu li a.active {
   color: #42858C;
   background-color:#046273;
