@@ -11,7 +11,7 @@ body{
 
 }
 
-input[type=text] {
+.search-bar input[type=text]{
   position: absolute;
   right:31px;
   width: 180px;
@@ -28,9 +28,10 @@ input[type=text] {
   padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
+
 }
 
-input[type=text]:focus {
+.search-bar input[type=text]:focus {
   width: 60%;
 }
 
@@ -315,14 +316,14 @@ h4{
     display: block;
   }
 
-    input[type=text]{
+    .search-bar input[type=text]{
     right: 15px;
     width: 0px;
     margin-top: -10px;
 
   }
 
-    input[type=text]:focus {
+    .search-bar input[type=text]:focus {
     width: 30%;
   }
     .card {
