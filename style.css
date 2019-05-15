@@ -11,6 +11,10 @@ body{
 
 }
 
+label{
+  display: None;
+}
+
 .search-bar input[type=text]{
   position: absolute;
   right:31px;
