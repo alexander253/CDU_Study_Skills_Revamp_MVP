@@ -14,7 +14,7 @@ body{
 .main_content{
   padding-left: 200px;
   padding-right: 200px;
-  
+
 }
 
 
@@ -53,11 +53,13 @@ body{
 h1{
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left:0 ;
+  padding-right:0;
   color: white;
   margin-top: -20px;
   text-align: center;
   font-family:sans-serif;
-  background: #201644;
+  background-image: linear-gradient(to right, #201644 ,#046273);
   background-size: 100%;
   font-size: 2em;
 }
@@ -110,6 +112,7 @@ h3{
   margin-top: 30px;
   text-align: center;
 
+
 }
 
 h3 a{
@@ -124,9 +127,11 @@ h3 span{
   padding-right: 150px;
   border-radius: 2px;
   clear: both;
-  background-color:#c91c1c;
+  background-image: linear-gradient(to right, #201644 ,#046273);
   box-shadow: 5px 5px #888888;
 }
+
+
 
 h4{
   font-size: 20px;
@@ -134,7 +139,7 @@ h4{
 
 .item{
   diplay: block;
-  background-color: #046273; /*#201644;*/
+  background-image: linear-gradient(to right, #201644 ,#046273);
   color: white;
   cursor: point;
   padding: 18px;
@@ -198,7 +203,7 @@ h4{
  }
  .collapsible{
   display: block;
-  background-color: #046273; /*#201644;*/
+  background-color:#046273;
   color: white;
   cursor: point;
   padding: 18px;
@@ -209,6 +214,40 @@ h4{
   font-size: 15px;
   margin-left: 1px;
 }
+
+
+.collapsible{
+  z-index: 1;
+  position: relative;
+  outline: none;
+  border: none;
+
+}
+
+.collapsible::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #201644;
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.collapsible:hover {
+  cursor: pointer;
+}
+
+.collapsible:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+
 
 .content {
   color: white;
