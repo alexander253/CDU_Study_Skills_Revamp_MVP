@@ -11,6 +11,18 @@ body{
 
 }
 
+.laptop{
+  display: block;
+  float: right;
+  width: 50%;
+  padding: 30px;
+  padding-right: 0px;
+  border-left: ridge;
+  border-width: 2px;
+  background-color: white;
+  margin-left: 15px;
+}
+
 .main_content{
   margin-right: 150px;
   margin-left: 150px;
@@ -173,7 +185,7 @@ h3 span{
   border-radius: 2px;
   clear: both;
   background-color:#046273;
-  box-shadow: 5px 5px #888888;
+  box-shadow: 12px 0 15px -4px #888888, -12px 0 8px -4px #888888;
 }
 
 
@@ -238,14 +250,15 @@ h4{
    border-width: 1px;
    border-radius: 2px;
    margin-bottom: 100px;
-   box-shadow: 5px 10px #cccccc ;
+   box-shadow: 12px 0 15px -4px #cccccc, -12px 0 8px -4px #cccccc;
    transition: 0.2s linear;
    background-color: white;
  }
 
  .card:hover{
    cursor: pointer;
-   box-shadow: 5px 10px #888888;
+   box-shadow: 12px 0 15px -4px #888888, -12px 0 8px -4px #888888;
+
  }
  .collapsible{
   display: block;
@@ -305,7 +318,7 @@ h4{
 
 
 .background_img{
-  background-image: url("https://cdn.lynda.com/course/441605/441605-636269220092757522-16x9.jpg");
+  background-image: url("https://www.anu.edu.au/files/styles/anu_full_920_518/public/guidance/shutterstock_293604095.jpg?itok=glMqF6mS");
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -401,6 +414,10 @@ h5 span{
 }
 
 @media only screen and (max-width: 750px) {
+
+  .laptop{
+    display: none;
+  }
   .extra_wrapper{
     flex-direction: column;
   }
@@ -478,7 +495,7 @@ ul{
     width: 350px;
   }
     .card img{
-    width: 340px
+    width: 340px;
   }
     .CDUlogo{
     width: 50%;
