@@ -319,7 +319,12 @@ h4{
 
 
 .background_img{
+<<<<<<< HEAD
+  background-image: url("https://cdn.lynda.com/course/441605/441605-636269220092757522-16x9.jpg");
+  b
+=======
   background-image: url("https://www.anu.edu.au/files/styles/anu_full_920_518/public/guidance/shutterstock_293604095.jpg?itok=glMqF6mS");
+>>>>>>> ac37c6390043a9e6f5f3719cd10d496d0326072b
   height: 200px;
   width: 100%;
   background-size: cover;
