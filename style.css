@@ -274,6 +274,7 @@ h4{
   margin-left: 1px;
 }
 
+/*Code from https://cssfx.dev/*/
 
 .item, .collapsible{
   z-index: 1;
@@ -413,7 +414,55 @@ h5 span{
   text-decoration: none;
 }
 
+/*Code from https://cssfx.dev/*/
+.spinny {
+  display: block;
+  clear: both;
+  position: relative;
+  left: 250px;
+  top: 60px;
+  width: 2em;
+  height: 2em;
+  border: 3px solid #95190C;
+  overflow: hidden;
+  animation: spin 3s ease infinite;
+}
+
+.spinny::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 2em;
+  height: 2em;
+  background-color: #95190C;
+  transform-origin: center bottom;
+  transform: scaleY(1);
+  animation: fill 3s linear infinite;
+}
+
+@keyframes spin {
+  50%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fill {
+  25%,
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+
 @media only screen and (max-width: 750px) {
+  .spinny {
+    left: 1%;
+  }
 
   .laptop{
     display: none;
@@ -481,7 +530,7 @@ ul{
     .search-bar input[type=text]{
     right: 8px;
     width: 0px;
-    top: 130px;
+    top: 155px;
     margin-top: -10px;
 
   }
@@ -498,6 +547,7 @@ ul{
     width: 340px;
   }
     .CDUlogo{
+      margin-top: 0px;
     width: 50%;
     left: 110px;
     margin-bottom: 20px;
