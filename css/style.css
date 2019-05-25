@@ -5,76 +5,13 @@ html {
 }
 body{
   font-family: sans-serif;
-  background: #EEEEEE;
-  padding-left: 25px;
-  padding-right: 25px;
+  background: #F0F1EB;
+  padding-left: 500px;
+  padding-right: 500px;
 
 }
 
-.laptop{
-  display: block;
-  float: right;
-  width: 50%;
-  padding: 30px;
-  padding-right: 0px;
-  border-left: ridge;
-  border-width: 2px;
-  background-color: white;
-  margin-left: 15px;
-}
 
-.main_content{
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-div.desc{
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: white;
-  box-shadow: 12px 0 15px -4px #cccccc, -12px 0 8px -4px #cccccc;
-
-
-}
-div.desc p{
-  padding-bottom: 15px;
-    border-bottom: ridge;
-    border-width: 2px;
-
-}
-
-div.content{
-  border: none;
-}
-
-.extra_wrapper{
-  border-top: ridge;
-  border-width: 3px;
-  display: flex;
-  font-size: 0.8em;
-}
-
-.extra_wrapper div{
-  border: ridge;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-
-
-
-.extra{
-  flex: auto;
-}
-
-
-
-.contact_heading{
-  font-size: 1.5em;
-}
 
 .search-bar input[type=text]{
   position: absolute;
@@ -110,13 +47,11 @@ div.content{
 h1{
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left:0 ;
-  padding-right:0;
   color: white;
   margin-top: -20px;
   text-align: center;
   font-family:sans-serif;
-  background-image: linear-gradient(to right, #201644 ,#046273);
+  background: #201644;
   background-size: 100%;
   font-size: 2em;
 }
@@ -167,8 +102,6 @@ li{
 
 h3{
   margin-top: 30px;
-  text-align: center;
-
 
 }
 
@@ -180,15 +113,11 @@ h3 a{
 h3 span{
   color: white;
   padding: 15px;
-  padding-left: 150px;
-  padding-right: 150px;
-  border-radius: 2px;
+  border-radius: 5px;
   clear: both;
   background-color:#046273;
-  box-shadow: 12px 0 15px -4px #888888, -12px 0 8px -4px #888888;
+  box-shadow: 5px 5px #888888;
 }
-
-
 
 h4{
   font-size: 20px;
@@ -196,7 +125,7 @@ h4{
 
 .item{
   diplay: block;
-  background-color: #046273;
+  background-color: #046273; /*#201644;*/
   color: white;
   cursor: point;
   padding: 18px;
@@ -247,22 +176,19 @@ h4{
    float: left;
    margin: 15px;
    border-style: ridge;
-   border-width: 1px;
-   border-radius: 2px;
+   border-radius: 5px;
    margin-bottom: 100px;
-   box-shadow: 12px 0 15px -4px #cccccc, -12px 0 8px -4px #cccccc;
+   box-shadow: 5px 10px #cccccc ;
    transition: 0.2s linear;
-   background-color: white;
  }
 
  .card:hover{
    cursor: pointer;
-   box-shadow: 12px 0 15px -4px #888888, -12px 0 8px -4px #888888;
-
+   box-shadow: 5px 10px #888888;
  }
  .collapsible{
   display: block;
-  background-color:#046273;
+  background-color: #046273; /*#201644;*/
   color: white;
   cursor: point;
   padding: 18px;
@@ -274,41 +200,6 @@ h4{
   margin-left: 1px;
 }
 
-/*Code from https://cssfx.dev/*/
-
-.item, .collapsible{
-  z-index: 1;
-  position: relative;
-  outline: none;
-  border: none;
-
-}
-
- .item::before, .collapsible::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #201644;
-  transform-origin: center right;
-  transform: scaleX(0);
-  transition: transform 0.25s ease-in-out;
-}
-
-.item:hover, .collapsible:hover {
-  cursor: pointer;
-}
-
-.item:hover::before, .collapsible:hover::before {
-  transform-origin: center left;
-  transform: scaleX(1);
-}
-
-
-
 .content {
   color: white;
   padding: 0 17px;
@@ -319,12 +210,7 @@ h4{
 
 
 .background_img{
-<<<<<<< HEAD
   background-image: url("https://cdn.lynda.com/course/441605/441605-636269220092757522-16x9.jpg");
-  b
-=======
-  background-image: url("https://www.anu.edu.au/files/styles/anu_full_920_518/public/guidance/shutterstock_293604095.jpg?itok=glMqF6mS");
->>>>>>> ac37c6390043a9e6f5f3719cd10d496d0326072b
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -352,7 +238,6 @@ h4{
 .nav_menu a ul{
   margin: 0;
   padding: 0;
-  padding-left: 0px;
   display: flex;
 }
 
@@ -412,101 +297,11 @@ label{
   margin-left: -10000px
 }
 
-h5 span{
-  background-color: #046273;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-}
-
-/*Code from https://cssfx.dev/*/
-.spinny {
-  display: block;
-  clear: both;
-  position: relative;
-  left: 250px;
-  top: 60px;
-  width: 2em;
-  height: 2em;
-  border: 3px solid #95190C;
-  overflow: hidden;
-  animation: spin 3s ease infinite;
-}
-
-.spinny::before {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 2em;
-  height: 2em;
-  background-color: #95190C;
-  transform-origin: center bottom;
-  transform: scaleY(1);
-  animation: fill 3s linear infinite;
-}
-
-@keyframes spin {
-  50%,
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fill {
-  25%,
-  50% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-
 @media only screen and (max-width: 750px) {
-  .spinny {
-    left: 1%;
-  }
-
-  .laptop{
-    display: none;
-  }
-  .extra_wrapper{
-    flex-direction: column;
-  }
-
-  .extra_wrapper div{
-    padding: 15px;
-    margin: 5px;
-
-  }
-
-.contact_heading{
-  margin-top: 50px;
-
-}
-
-  h3 span{
-
-    padding-left: 5px;
-    padding-right: 5px;
-
-  }
-
-body{
-  padding: 0;
-}
-
-.main_content{
-  padding: 7px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
   .nav_menu{
     display: none;
-    background: #F0F1EB;
+    background: #FFFFFC;
     position: relative;
     width: 100%;
     height: 50vh;
@@ -520,20 +315,17 @@ body{
      text-align: center;
      border: 1px solid gray;
      padding: 15px 30px;
-     margin-bottom: 10px;
-     background-color: white;
+     margin-bottom: 10px
 
    }
 
-ul{
-  padding-left: 0px;
-}
+
     .menu_icon{
     display: block;
   }
 
     .search-bar input[type=text]{
-    right: 8px;
+    right: 15px;
     width: 0px;
     top: 155px;
     margin-top: -10px;
@@ -549,10 +341,9 @@ ul{
     width: 350px;
   }
     .card img{
-    width: 340px;
+    width: 340px
   }
     .CDUlogo{
-      margin-top: 0px;
     width: 50%;
     left: 110px;
     margin-bottom: 20px;
@@ -560,7 +351,9 @@ ul{
     h1{
     margin-top: 50px;
   }
-
+    body{
+    padding: 7px;
+  }
 
   .footer{
     width: 100%;
