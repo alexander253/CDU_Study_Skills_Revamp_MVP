@@ -142,24 +142,6 @@
 
 </div>
 
-<footer>
-<div class="footer">
-  <div class="social-link">
-    <ul class="social_icons">
-      <li><a href="http://www.facebook.com/home.php#!/CharlesDarwinUniversity" target="self"> <i class="fa fa-3x fa-facebook-square"> </i>Facebook</a></li>
-      <li><a href="https://www.instagram.com/charlesdarwinuniversity/" target="self"> <i class="fa fa-3x fa-instagram"> </i>Instagram</a></li>
-      <li><a href="http://www.linkedin.com/company/charles-darwin-university?trk=copro_tab" target="self"> <i class="fa fa-3x fa-linkedin-square"> </i>LinkedIn</a></li>
-      <li><a href="http://twitter.com/CDUni" target="self"><i class="fa fa-3x fa-twitter-square"></i>Twitter</a></li>
-      <li><a href="https://www.youtube.com/channel/UCKCcLzf49llRjQbNq3llFCg" target="self"> <i class="fa fa-3x fa-youtube-square"> </i>YouTube</a></li>
-    </ul>
-  </div>
-  <div class="footer-desc">
-    <p>Authorised by: <a href="https://www.cdu.edu.au/academic-language-learning/allsp">ALLSP</a> | Last updated: May 16, 2019</p>
-    <p>ABN 54 093 513 649 | <a href="http://www.cdu.edu.au/governance/doclibrary/pol-032.pdf">Privacy Statement</a> | <a href="https://www.cdu.edu.au/about/copyright">Copyright and Disclaimer</a> | CRICOS Provider No: 00300K</p>
-  </div>
-</div>
-</footer>
-
 <h3 class=" contact_heading">Contact and Support</h3>
 <div class="extra_wrapper">
   <div class="extra">
@@ -210,7 +192,24 @@
 
 </div>
 
-
+<footer>
+<div class="footer">
+  <div class="social-link">
+    <ul class="social_icons">
+      <li><a href="http://www.facebook.com/home.php#!/CharlesDarwinUniversity" target="self"> <i class="fa fa-3x fa-facebook-square"> </i>Facebook</a></li>
+      <li><a href="https://www.instagram.com/charlesdarwinuniversity/" target="self"> <i class="fa fa-3x fa-instagram"> </i>Instagram</a></li>
+      <li><a href="http://www.linkedin.com/company/charles-darwin-university?trk=copro_tab" target="self"> <i class="fa fa-3x fa-linkedin-square"> </i>LinkedIn</a></li>
+      <li><a href="http://twitter.com/CDUni" target="self"><i class="fa fa-3x fa-twitter-square"></i>Twitter</a></li>
+      <li><a href="https://www.youtube.com/channel/UCKCcLzf49llRjQbNq3llFCg" target="self"> <i class="fa fa-3x fa-youtube-square"> </i>YouTube</a></li>
+    </ul>
+  </div>
+  <div class="footer-desc">
+    <p>Authorised by: <a href="https://www.cdu.edu.au/academic-language-learning/allsp">ALLSP</a> | Last updated: May 16, 2019</p>
+    <p>ABN 54 093 513 649 | <a href="http://www.cdu.edu.au/governance/doclibrary/pol-032.pdf">Privacy Statement</a> | <a href="https://www.cdu.edu.au/about/copyright">Copyright and Disclaimer</a> | CRICOS Provider No: 00300K</p>
+    <button onclick="topFunction()" id="myBtn"><i class="fa fa-3x fa-arrow-up"></i></button>
+  </div>
+</div>
+</footer>
 
 
 
@@ -249,10 +248,22 @@ function navFunc() {
     {x.style.display = "block";}
    else {
     {x.style.display = "none";}
+  }
+}
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
   }
 }
 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
   </body>
 </html>
