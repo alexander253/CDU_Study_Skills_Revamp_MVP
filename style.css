@@ -231,7 +231,7 @@ h4{
 
 .desc{
   margin: auto;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -336,7 +336,7 @@ h4{
   color: white;
   padding: 0 17px;
   overflow: hidden;
-  text-align: justify;
+  text-align: left;
   font-family:arial;
 }
 
