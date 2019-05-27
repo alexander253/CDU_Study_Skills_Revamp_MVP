@@ -202,7 +202,7 @@
   <div class="footer-desc">
     <p>Authorised by: <a href="https://www.cdu.edu.au/academic-language-learning/allsp">ALLSP</a> | Last updated: May 16, 2019</p>
     <p>ABN 54 093 513 649 | <a href="http://www.cdu.edu.au/governance/doclibrary/pol-032.pdf">Privacy Statement</a> | <a href="https://www.cdu.edu.au/about/copyright">Copyright and Disclaimer</a> | CRICOS Provider No: 00300K</p>
-    <button onclick="topFunction()" id="myBtn"><i class="fa fa-3x fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="backtotop"><i class="fa fa-3x fa-arrow-up"></i></button>
   </div>
 </div>
 </footer>
@@ -246,19 +246,23 @@ function navFunc() {
     {x.style.display = "none";}
   }
 }
-window.onscroll = function() {scrollFunction()};
+
+
+var d = document
+var w = window
+w.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+  if (d.body.scrollTop > 20 || d.documentElement.scrollTop > 20) {
+    d.getElementById("backtotop").style.display = "block";
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    d.getElementById("backtotop").style.display = "none";
   }
 }
 
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  d.body.scrollTop = 0;
+  d.documentElement.scrollTop = 0;
 }
 </script>
   </body>
