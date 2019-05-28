@@ -595,7 +595,7 @@ ul{
   }
   #backtotop{
     position: fixed;
-    bottom: 130px;
+    bottom: 190px;
     right: 30px;
     z-index: 99;
     border: none;
